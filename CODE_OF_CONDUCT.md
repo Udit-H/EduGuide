@@ -38,7 +38,7 @@ Maintainers have the right and responsibility to remove, edit, or reject comment
 
 ## Reporting
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please report it by contacting the project maintainers at: **[your_email@example.com]**.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please report it by contacting the project maintainers at: **udith1306@gmail.com**.
 
 All reports will be handled with discretion and sensitivity.
 
