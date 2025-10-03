@@ -38,7 +38,7 @@ We accept contributions via **pull requests (PRs)**:
 
 1. **Fork the repository**  
    ```bash
-   git clone https://github.com/your-username/edu-guide.git
+   git clone https://github.com/Udit-H/EduGuide.git
    cd edu-guide
    git checkout -b my-feature-branch
 2. **Make your changes on your branch.**
