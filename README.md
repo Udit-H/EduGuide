@@ -117,6 +117,8 @@ Many learners struggle with:
 
 ## 🚀 Hackathon MVP Roadmap
 
+also need to add how to run project in CONTRIBUTING.md
+
 - **Hour 1:**  
   - Set up Streamlit frontend.  
   - Integrate Gradient AI API for roadmap generation.  
