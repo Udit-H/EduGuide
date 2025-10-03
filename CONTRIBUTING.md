@@ -53,39 +53,39 @@ git commit -m "Add feature: <brief description>"
 
 ```bash
 git push origin my-feature-branch
-Open a Pull Request from your branch to the main branch of the original repository.
 ```
+5. **Open a Pull Request from your branch to the main branch of the original repository.**
 
-4. Coding Guidelines
-Write clean, readable code and add comments where necessary.
+### 4. Coding Guidelines
+- Write clean, readable code and add comments where necessary.
 
-Follow PEP8 (for Python) and standard React/JS conventions.
+- Follow PEP8 (for Python) and standard React/JS conventions.
 
-Make sure your code does not break existing functionality.
+- Make sure your code does not break existing functionality.
 
-Include tests or sample data if applicable.
+- Include tests or sample data if applicable.
 
-5. Documentation
-Add or update documentation for new features.
+### 5. Documentation
+- Add or update documentation for new features.
 
-Include examples or screenshots where helpful.
+- Include examples or screenshots where helpful.
 
-Keep the README, API docs, and guides clear and concise.
+- Keep the README, API docs, and guides clear and concise.
 
-6. Communication
-Be respectful and constructive in all interactions.
+### 6. Communication
+- Be respectful and constructive in all interactions.
 
-Follow the Code of Conduct at all times.
+- Follow the Code of Conduct at all times.
 
-For any sensitive concerns, contact the maintainers directly via [your_email@example.com].
+- For any sensitive concerns, contact the maintainers directly via udith1306@gmail.com.
 
-7. Getting Help
-If you’re unsure how to contribute:
+### 7. Getting Help
+- If you’re unsure how to contribute:
 
-Open an issue asking for guidance.
+- Open an issue asking for guidance.
 
-Discuss your approach before spending too much time.
+- Discuss your approach before spending too much time.
 
-Thank You! 🙏
+## Thank You! 🙏
 Your contributions make EduGuide better for everyone.
 We appreciate your time, ideas, and effort in helping learners worldwide!
