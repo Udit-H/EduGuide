@@ -38,23 +38,23 @@ We accept contributions via **pull requests (PRs)**:
 
 1. **Fork the repository**  
    ```bash
-   git clone https://github.com/your-username/edu-guide.git
+   git clone https://github.com/Udit-H/EduGuide.git
    cd edu-guide
    git checkout -b my-feature-branch
-Make your changes on your branch.
+2. **Make your changes on your branch.**
 
-Commit your changes
+3. **Commit your changes**
 
-bash
-Copy code
+```bash
 git add .
 git commit -m "Add feature: <brief description>"
-Push your branch
+```
+4. **Push your branch**
 
-bash
-Copy code
+```bash
 git push origin my-feature-branch
 Open a Pull Request from your branch to the main branch of the original repository.
+```
 
 4. Coding Guidelines
 Write clean, readable code and add comments where necessary.
