@@ -62,13 +62,10 @@ Many learners struggle with:
 ## 🧩 Tech Stack
 
 - **AI & Model Development:** Gradient AI Platform → NLP for roadmap generation, summarization, quiz/flashcard creation, milestone analysis.  
-- **Backend:** Python (FastAPI or Flask).  
-- **Frontend:** Streamlit for interactive user interface.  
-- **Data & Storage:**  
-  - Users can upload PDFs, CSVs, or text files.  
-  - Managed database (PostgreSQL / MongoDB) for storing user progress and flashcards.  
+- **Backend:** Python (Flask).  
+- **Frontend:** React.js + Tailwind CSS 
+- **Database:**  PostgreSQL
 - **Deployment:** DigitalOcean App Platform or Droplets.  
-- **Observability:** Optional monitoring via Prometheus/Grafana.  
 
 ---
 
