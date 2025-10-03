@@ -56,6 +56,8 @@ git push origin my-feature-branch
 ```
 5. **Open a Pull Request from your branch to the main branch of the original repository.**
 
+---
+
 ### 4. Coding Guidelines
 - Write clean, readable code and add comments where necessary.
 
@@ -65,6 +67,8 @@ git push origin my-feature-branch
 
 - Include tests or sample data if applicable.
 
+---
+
 ### 5. Documentation
 - Add or update documentation for new features.
 
@@ -72,12 +76,16 @@ git push origin my-feature-branch
 
 - Keep the README, API docs, and guides clear and concise.
 
+---
+
 ### 6. Communication
 - Be respectful and constructive in all interactions.
 
 - Follow the Code of Conduct at all times.
 
 - For any sensitive concerns, contact the maintainers directly via udith1306@gmail.com.
+
+---
 
 ### 7. Getting Help
 - If you’re unsure how to contribute:
