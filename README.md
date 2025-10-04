@@ -8,6 +8,9 @@ It also integrates **research paper summarization** to help learners grasp compl
 
 ---
 
+## Demo Video
+https://www.youtube.com/watch?v=-PDVdoJyqPc
+
 ## 🛠️ Features
 
 1. **Personalized Learning Roadmap**  
@@ -61,11 +64,10 @@ Many learners struggle with:
 
 ## 🧩 Tech Stack
 
-- **AI & Model Development:** Gradient AI Platform → NLP for roadmap generation, summarization, quiz/flashcard creation, milestone analysis.  
+- **AI & Model Development:** Gemini  
 - **Backend:** Flask.  
 - **Frontend:** React.js + Tailwind CSS 
-- **Database:**  Mongo DB
-- **Deployment:** DigitalOcean App Platform or Droplets.  
+- **Database:**  Mongo DB 
 
 ---
 
