@@ -120,7 +120,7 @@ Many learners struggle with:
 also need to add how to run project in CONTRIBUTING.md
 
 - **Hour 1:**  
-  - Set up Streamlit frontend.  
+  - Set up Tailwind frontend.  
   - Integrate Gradient AI API for roadmap generation.  
 
 - **Hour 2:**  

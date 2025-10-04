@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    // This path tells Tailwind to scan your index.html file
+    // Must scan the root index.html
     "./index.html",
-    // This path tells Tailwind to scan all React component files in your 'src' folder
-    "./src/**/*.{js,ts,jsx,tsx}",
+    // Must scan all files inside the src folder with these extensions
+    "./src/**/*.{js,ts,jsx,tsx}", 
   ],
   theme: {
-    extend: {},
+    // ... your color palette is here ...
+    extend: {
+      // ...
+    },
   },
   plugins: [],
 }
