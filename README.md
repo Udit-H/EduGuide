@@ -1,4 +1,4 @@
-# 📚 AI-Powered Personalized Learning Path
+# 📚 AI-Powered Personalized Learning Path - NeuroNerds
 
 ## Overview
 
