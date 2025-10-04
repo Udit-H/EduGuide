@@ -1,24 +1,28 @@
 import os
-# --- REMOVED: from dotenv import load_dotenv --- 
-# The environment is loaded by run.py, we only need 'os' here.
+from dotenv import load_dotenv
 
-# Define BASEDIR relative to the config.py file itself.
+# Get the base directory path for local file operations
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     # Flask Secret Key
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'default-secret-key-for-development'
     
-    # Database Configuration (Reads directly from the environment)
-    MONGO_URI = os.environ.get('MONGO_URI') 
-    MONGO_DB_NAME = os.getenv('MONGO_DB_NAME', 'EduGuide')
+    # -----------------------------------------------------------
+    # DATABASE CONFIGURATION (MongoDB)
+    # -----------------------------------------------------------
+    MONGO_URI = os.getenv('MONGO_URI') 
+    MONGO_DB_NAME = os.getenv('MONGO_DB_NAME', 'EduGuideDB_Default') # Added default for safety
 
-    # AI Platform Configuration
-    GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY')
-    GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash')
+    # -----------------------------------------------------------
+    # AI PLATFORM CONFIGURATION (Gemini API)
+    # -----------------------------------------------------------
+    GEMINI_API_KEY = os.getenv('GEMINI_API_KEY') 
+    GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-2.5-flash')
     
-    # File Uploads Configuration
-    # UPLOAD_FOLDER is set relative to the Project Root ('..')
+    # -----------------------------------------------------------
+    # FILE UPLOADS CONFIGURATION
+    # -----------------------------------------------------------
     UPLOAD_FOLDER = os.path.join(BASEDIR, '..', 'uploads')
     MAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16 MB limit
     ALLOWED_EXTENSIONS = {'txt', 'pdf'}
