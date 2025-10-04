@@ -1,13 +1,15 @@
+# Configuration and Secrets
+.env
+
 # Python Virtual Environments
 venv/
 .venv/
-
-# Specific OS files
-.DS_Store
-Thumbs.db
 
 # Compiled Python files
 __pycache__/
 *.pyc
 
-.env
+# Database and Logs
+*.sqlite3
+instance/
+logs/
