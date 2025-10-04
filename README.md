@@ -64,7 +64,7 @@ Many learners struggle with:
 - **AI & Model Development:** Gradient AI Platform → NLP for roadmap generation, summarization, quiz/flashcard creation, milestone analysis.  
 - **Backend:** Flask.  
 - **Frontend:** React.js + Tailwind CSS 
-- **Database:**  PostgreSQL
+- **Database:**  Mongo DB
 - **Deployment:** DigitalOcean App Platform or Droplets.  
 
 ---
