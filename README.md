@@ -8,6 +8,9 @@ It also integrates **research paper summarization** to help learners grasp compl
 
 ---
 
+## Demo Video
+https://www.youtube.com/watch?v=-PDVdoJyqPc
+
 ## 🛠️ Features
 
 1. **Personalized Learning Roadmap**  
