@@ -3,32 +3,42 @@ from google import genai
 from google.genai import types
 from config import Config
 from app.schemas.ai_output import LearningPathOutput, MilestoneReportOutput, PaperSummaryOutput
+from pydantic import BaseModel # CRITICAL FIX: Import BaseModel for function signatures
 
-# Initialize the client using the API Key from config
-client = genai.Client(api_key=Config.GEMINI_API_KEY)
+def get_gemini_client():
+    """Returns an initialized Gemini client using the key from config."""
+    # Check for the key using the Config class
+    if not Config.GEMINI_API_KEY:
+        # Raise a clear exception if the key is still missing
+        raise Exception("Gemini API Key is missing. Check your .env file and config.py loading.")
+    # The client is created only when this function is called, 
+    # ensuring the environment variable is ready.
+    return genai.Client(api_key=Config.GEMINI_API_KEY)
+
 MODEL_NAME = Config.GEMINI_MODEL
 
-def _make_gemini_call(prompt: str, schema: BaseModel) -> dict:
+def _make_gemini_call(prompt: str, schema: BaseModel) -> dict: # Function now knows what BaseModel is
     """A generic function to handle all structured Gemini API calls."""
-    if not Config.GEMINI_API_KEY:
-        raise Exception("Gemini API Key not configured in environment.")
+    
+    client = get_gemini_client() 
     
     try:
-        response = client.generate_content(
+        # --- CRITICAL FIX: Change client.generate_content to client.models.generate_content ---
+        response = client.models.generate_content(
             model=MODEL_NAME,
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
                 response_schema=schema, 
-                # This system instruction is crucial for high-quality JSON adherence
                 system_instruction="You are an expert AI Curriculum Designer named 'Pathfinder'. Your only job is to generate output that strictly adheres to the requested JSON schema."
             )
         )
+        # -------------------------------------------------------------------------------------
         
-        # We rely on the model to return valid JSON, which is then parsed by json.loads
         return json.loads(response.text)
 
     except Exception as e:
+        # ... (error handling remains the same)
         raise Exception(f"Gemini API generation failed. Error: {e}")
 
 

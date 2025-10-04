@@ -1,27 +1,32 @@
 from flask import Flask
 from flask_cors import CORS
-from flask_sqlalchemy import SQLAlchemy 
+# REMOVED: from flask_sqlalchemy import SQLAlchemy 
 from config import Config
+from pymongo import MongoClient 
 
-db = SQLAlchemy() 
+mongo_client = None
 
 def create_app(config_class=Config):
+    global mongo_client
+    
     app = Flask(__name__)
     app.config.from_object(config_class)
 
     CORS(app) 
-    db.init_app(app) 
+    
+    # REMOVED: db.init_app(app)  <--- DELETE THIS LINE
 
-    # Register Blueprints (Routes)
-    from app.routes.learning_routes import learning_bp
-    from app.routes.file_routes import file_bp
+    # CRITICAL: MongoDB Client Initialization (Kept)
+    if not mongo_client:
+        mongo_client = MongoClient(app.config['MONGO_URI'])
+        
+    app.db = mongo_client[app.config['MONGO_DB_NAME']] 
+    
+    # Register Blueprints
+    from .routes.learning_routes import learning_bp
+    from .routes.file_routes import file_bp
     
     app.register_blueprint(learning_bp, url_prefix='/api/learn')
     app.register_blueprint(file_bp, url_prefix='/api/files') 
-
-    # Setup database within the application context
-    with app.app_context():
-        from app.models import user, roadmap 
-        db.create_all() # Create tables if they don't exist
         
     return app
