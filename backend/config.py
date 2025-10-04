@@ -1,7 +1,10 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+#load_dotenv()
+
+BASEDIR = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(BASEDIR, '..', '..', '.env'))
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'default-secret-key-for-development'
@@ -12,7 +15,8 @@ class Config:
 
     # AI Platform Configuration
     GRADIENT_API_TOKEN = os.environ.get('GRADIENT_API_TOKEN')
-    GRADIENT_BASE_URL = os.environ.get('GRADIENT_BASE_URL')
+    GEMINI_MODEL = os.environ.get('GEMINI_MODEL', 'gemini-2.5-flash')
+    #GRADIENT_BASE_URL = os.environ.get('GRADIENT_BASE_URL')
     
     # File Uploads Configuration
     UPLOAD_FOLDER = os.environ.get('UPLOAD_FOLDER', 'uploads')
