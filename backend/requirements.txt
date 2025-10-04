@@ -1,8 +1,14 @@
+# Web Framework and Utilities
 Flask
-python-dotenv
-gunicorn
-Flask-SQLAlchemy
-psycopg2-binary
-Flask-Migrate
-google-genai
-pydantic
+flask-cors                  # Required for handling API requests from React frontend
+gunicorn                    # Recommended for production deployment (e.g., DigitalOcean)
+requests                    # Standard library for making HTTP calls (kept for versatility)
+python-dotenv               # For securely loading environment variables (.env)
+
+# Database (MongoDB)
+pymongo                     # Python driver for connecting to MongoDB Atlas
+dnspython                   # Required by PyMongo for mongodb+srv connection URIs
+
+# AI Integration
+openai                      # Used to connect to the Gradient AI Agent endpoint
+pydantic                    # Essential for enforcing structured JSON output (schemas)
