@@ -142,8 +142,6 @@ Bash
 
 npm run dev
 
-    Tip: npm start is a special shortcut that doesn't require the run keyword. For all other scripts defined in package.json (like npm run dev or npm run build), you need to include run.
-
 ## 🌐 Future Enhancements
 
 - Gamify learning with badges or points.  
