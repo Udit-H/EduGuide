@@ -83,7 +83,7 @@ git push origin my-feature-branch
 
 - Follow the Code of Conduct at all times.
 
-- For any sensitive concerns, contact the maintainers directly via **udith1306@gmail.com**, **anniruddh6@gmail.com**.
+- For any sensitive concerns, contact the maintainers directly via **udith1306@gmail.com**, **anniruddh6@gmail.com** , **shreesha8406@gmail.com** .
 
 ---
 
