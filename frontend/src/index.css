@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html, body, #root {
   height: 100%;
   width: 100%;
@@ -8,7 +13,3 @@ html, body, #root {
   justify-content: center;
   align-items: flex-start; /* Aligns the app to the top */
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
