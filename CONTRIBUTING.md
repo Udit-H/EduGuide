@@ -12,7 +12,7 @@ By contributing, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 ### 1. Reporting Bugs
 If you find a bug in EduGuide:
 
-1. Check the [Issues](https://github.com/your-username/edu-guide/issues) to see if it has already been reported.  
+1. Check the [Issues](https://github.com/Udit-H/EduGuide/issues) to see if it has already been reported.  
 2. If not, create a new issue and include:
    - A descriptive title.
    - Steps to reproduce the issue.
@@ -24,7 +24,7 @@ If you find a bug in EduGuide:
 ### 2. Suggesting Features
 We love new ideas! To suggest a feature:
 
-1. Go to [Issues](https://github.com/your-username/edu-guide/issues) → New Issue.  
+1. Go to [Issues](https://github.com/Udit-H/EduGuide/issues) → New Issue.  
 2. Select **Feature Request** or label it accordingly.  
 3. Include:
    - Clear description of the feature.
