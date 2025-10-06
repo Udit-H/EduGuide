@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_cors import CORS
-# REMOVED: from flask_sqlalchemy import SQLAlchemy 
 from config import Config
 from pymongo import MongoClient 
 
@@ -14,15 +13,12 @@ def create_app(config_class=Config):
 
     CORS(app) 
     
-    # REMOVED: db.init_app(app)  <--- DELETE THIS LINE
 
-    # CRITICAL: MongoDB Client Initialization (Kept)
     if not mongo_client:
         mongo_client = MongoClient(app.config['MONGO_URI'])
         
     app.db = mongo_client[app.config['MONGO_DB_NAME']] 
     
-    # Register Blueprints
     from .routes.learning_routes import learning_bp
     from .routes.file_routes import file_bp
     
