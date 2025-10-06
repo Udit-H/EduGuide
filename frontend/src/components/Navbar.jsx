@@ -11,7 +11,7 @@ function Navbar() {
         <div className="flex items-center space-x-2">
           <BookOpenIcon className="h-6 w-6 text-primary" />
           <span className="text-xl font-bold tracking-wider text-text-base">
-            SkillAI
+            EduGuide
           </span>
         </div>
 

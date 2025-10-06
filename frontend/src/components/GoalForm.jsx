@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { SparklesIcon, ClockIcon, PaperClipIcon } from '@heroicons/react/24/solid';
 
-function GoalForm({ onRoadmapGenerated, setLoading }) { // Destructure props
+function GoalForm({ onRoadmapGenerated, setLoading }) { 
   const [skills, setSkills] = useState('');
   const [goal, setGoal] = useState('');
   const [dailyTime, setDailyTime] = useState(1); // Default to 1 hour
   const [file, setFile] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  // The state is now managed by the parent App.jsx via props
-  // const [isSubmitting, setIsSubmitting] = useState(false); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();

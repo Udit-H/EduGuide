@@ -8,8 +8,8 @@ html, body, #root {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #111827; /* This matches the app's dark background */
+  background-color: #111827;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Aligns the app to the top */
+  align-items: flex-start; 
 }
